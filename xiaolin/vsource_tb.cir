@@ -1,0 +1,18 @@
+**.subckt vsource_tb
+V2 out GND PULSE(1.8 0 10ns 10ps 1ps 40ns 50ns)
+**** begin user architecture code
+
+
+
+.control
+save all
+tran 1n 100n
+plot out
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end

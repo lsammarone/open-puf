@@ -1,0 +1,126 @@
+**.subckt 16cell
+x1 net3 net2 GND net1 net17 V0 singlestage
+x2 net3 net2 GND net4 net1 V1 singlestage
+x3 net3 net2 GND net5 net4 V0 singlestage
+x4 net3 net2 GND net6 net5 V1 singlestage
+x5 net3 net2 GND net7 net6 V0 singlestage
+x6 net3 net2 GND net8 net7 V1 singlestage
+x7 net3 net2 GND net9 net8 V0 singlestage
+x8 net3 net2 GND net10 net9 V1 singlestage
+x9 net3 net2 GND net18 net10 V0 singlestage
+x10 net3 net2 GND net11 net18 V1 singlestage
+x11 net3 net2 GND net12 net11 V0 singlestage
+x12 net3 net2 GND net13 net12 V1 singlestage
+x13 net3 net2 GND net14 net13 V0 singlestage
+x14 net3 net2 GND net15 net14 V1 singlestage
+x15 net3 net2 GND net16 net15 V0 singlestage
+x16 net3 net2 GND net17 net16 V1 singlestage
+x17 net3 net2 GND net18 net10 V0 singlestage
+x18 net3 net2 GND net11 net18 V1 singlestage
+x19 net3 net2 GND net12 net11 V0 singlestage
+x20 net3 net2 GND net13 net12 V1 singlestage
+V1 V1 GND 1.8
+V2 V0 GND 0
+V3 net2 GND 1.8
+V4 net3 GND 0
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+**.lib ::SKYWATER_MODELS/sky130.lib.spice tt
+.lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+
+
+vvss vss 0 dc 0
+
+.control
+save all
+tran 0.01n 30n
+plot "net17"
+write 16cell.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  singlestage.sym # of pins=6
+* sym_path: /home/users/xw5/372puf/ee372/singlestage.sym
+* sch_path: /home/users/xw5/372puf/ee372/singlestage.sch
+.subckt singlestage  RESET VDD VSS OUT IN C
+*.ipin IN
+*.ipin C
+*.ipin RESET
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+x1 RESET net1 VGND VNB VPB VPWR net3 sky130_fd_sc_hd__nor2_1
+x2 RESET net2 VGND VNB VPB VPWR net4 sky130_fd_sc_hd__nor2_1
+x3 C VSS net1 VDD IN net5 net2 demux2-1
+x4 C VSS net3 VDD OUT net5 net4 mux2-1
+x5 C VGND VNB VPB VPWR net5 sky130_fd_sc_hd__inv_1
+.ends
+
+
+* expanding   symbol:  demux2-1.sym # of pins=7
+* sym_path: /home/users/xw5/372puf/ee372/demux2-1.sym
+* sch_path: /home/users/xw5/372puf/ee372/demux2-1.sch
+.subckt demux2-1  S VSS OUT1 VDD IN Sbar OUT2
+*.ipin Sbar
+*.ipin S
+*.iopin VSS
+*.iopin VDD
+*.opin OUT1
+*.opin OUT2
+*.ipin IN
+XM2 IN S OUT1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM1 IN Sbar OUT2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 IN S OUT2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 IN Sbar OUT1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 IN S OUT2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+* expanding   symbol:  mux2-1.sym # of pins=7
+* sym_path: /home/users/xw5/372puf/ee372/mux2-1.sym
+* sch_path: /home/users/xw5/372puf/ee372/mux2-1.sch
+.subckt mux2-1  S VSS IN1 VDD OUT Sbar IN2
+*.ipin IN1
+*.ipin IN2
+*.ipin Sbar
+*.ipin S
+*.opin OUT
+*.iopin VSS
+*.iopin VDD
+XM2 IN1 S OUT VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM1 IN2 Sbar OUT VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 IN2 S OUT VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 IN1 Sbar OUT VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 IN2 S OUT VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.end

@@ -1,0 +1,1 @@
+/farmshare/home/classes/ee/372/PDKs/share/pdk/sky130A/libs.ref/sky130_ml_xx_hd/scripts/text2mag.py

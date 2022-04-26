@@ -1,0 +1,2 @@
+./custom/sky130_fd_sc_hd/lef/*.lef
+/farmshare/home/classes/ee/372/PDKs/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells/*/*.lef
