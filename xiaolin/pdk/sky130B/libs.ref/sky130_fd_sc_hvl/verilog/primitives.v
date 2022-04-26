@@ -1,1 +1,0 @@
-/farmshare/home/classes/ee/372/PDKs/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/verilog/primitives.v

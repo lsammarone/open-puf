@@ -1,2 +1,0 @@
-./custom/sky130_fd_pr/*.gds
-/farmshare/home/classes/ee/372/PDKs/skywater-pdk/libraries/sky130_fd_pr/latest/cells/*/*.gds
