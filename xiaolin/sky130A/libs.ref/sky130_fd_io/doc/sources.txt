@@ -1,0 +1,1 @@
+/farmshare/home/classes/ee/372/PDKs/skywater-pdk/libraries/sky130_fd_io/latest/cells/*/*.pdf

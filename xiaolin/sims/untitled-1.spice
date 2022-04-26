@@ -1,0 +1,20 @@
+**.subckt untitled-1
+x1 net2 net1 VGND VNB VPB VPWR out sky130_fd_sc_hd__nor2_1
+V1 net2 GND PULSE(1.8 0 0ns 10ps 10ps 2ns 5ns)
+V2 net1 GND 0
+**** begin user architecture code
+
+
+.lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+
+
+blabla
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end
