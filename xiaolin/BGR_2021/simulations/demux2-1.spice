@@ -1,0 +1,4 @@
+**.subckt demux2-1
+**.ends
+** flattened .save nodes
+.end
