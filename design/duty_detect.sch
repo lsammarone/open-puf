@@ -92,6 +92,7 @@ value="
 save all
 tran 0.01n 100n
 *op
+.ic V(VCAP)= 0
 plot vcap in
 write duty_detect.raw
 .endc
@@ -104,11 +105,11 @@ C {devices/lab_pin.sym} 530 -490 0 0 {name=l2 sig_type=std_logic lab=VPWR}
 C {devices/lab_pin.sym} 640 -80 0 0 {name=l3 sig_type=std_logic lab=VPWR}
 C {devices/lab_pin.sym} 650 90 0 0 {name=l4 sig_type=std_logic lab=VGND}
 C {devices/lab_pin.sym} 310 440 0 0 {name=l5 sig_type=std_logic lab=VGND}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 810 190 0 0 {name=C1 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 810 190 0 0 {name=C1 model=cap_mim_m3_1 W=33 L=30 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 810 250 0 0 {name=l6 sig_type=std_logic lab=VGND}
 C {devices/lab_pin.sym} 740 10 0 0 {name=l7 sig_type=std_logic lab=VCAP}
 C {devices/vsource.sym} -70 90 0 0 {name=V1 value=1.8}
-C {devices/vsource.sym} 170 100 0 0 {name=V2 value=PULSE"(0 1.8 0ns 10ps 10ps 500ps 1ns) DC=0.8"}
+C {devices/vsource.sym} 170 100 0 0 {name=V2 value=PULSE"(1.8 0 0ns 10ps 10ps 1ns 2ns) DC=0.8"}
 C {devices/lab_pin.sym} 170 160 0 0 {name=l8 sig_type=std_logic lab=VGND}
 C {devices/lab_pin.sym} 260 30 0 0 {name=l9 sig_type=std_logic lab=IN}
 C {devices/lab_pin.sym} -70 150 0 0 {name=l10 sig_type=std_logic lab=VGND}
