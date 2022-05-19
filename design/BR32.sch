@@ -317,6 +317,8 @@ N -1220 200 -1100 200 { lab=C5}
 N -1220 240 -1100 240 { lab=C6}
 N -1220 280 -1100 280 { lab=C7}
 N -1220 320 -1100 320 { lab=C8}
+N -340 -470 -280 -470 { lab=RESET}
+N -280 -470 -180 -470 { lab=RESET}
 C {singlestage.sym} -20 -50 0 0 {name=x1}
 C {singlestage.sym} 200 -50 0 0 {name=x2}
 C {singlestage.sym} 420 -50 0 0 {name=x3}
@@ -325,10 +327,6 @@ C {singlestage.sym} 870 -50 0 0 {name=x5}
 C {singlestage.sym} 1090 -50 0 0 {name=x6}
 C {singlestage.sym} 1310 -50 0 0 {name=x7}
 C {singlestage.sym} 1530 -50 0 0 {name=x8}
-C {singlestage.sym} 1750 -50 0 0 {name=x9}
-C {singlestage.sym} 1980 -50 0 0 {name=x10}
-C {singlestage.sym} 2200 -50 0 0 {name=x11}
-C {singlestage.sym} 2420 -50 0 0 {name=x12}
 C {singlestage.sym} 2640 -50 0 0 {name=x13}
 C {singlestage.sym} 2870 -50 0 0 {name=x14}
 C {singlestage.sym} 3090 -50 0 0 {name=x15}
@@ -354,10 +352,6 @@ C {singlestage.sym} 4460 -50 0 0 {name=x25}
 C {singlestage.sym} 4680 -50 0 0 {name=x26}
 C {singlestage.sym} 4900 -50 0 0 {name=x27}
 C {singlestage.sym} 5120 -50 0 0 {name=x28}
-C {singlestage.sym} 5340 -50 0 0 {name=x29}
-C {singlestage.sym} 5570 -50 0 0 {name=x30}
-C {singlestage.sym} 5790 -50 0 0 {name=x31}
-C {singlestage.sym} 6010 -50 0 0 {name=x32}
 C {singlestage.sym} 6230 -50 0 0 {name=x33}
 C {singlestage.sym} 6460 -50 0 0 {name=x34}
 C {singlestage.sym} 6680 -50 0 0 {name=x35}
@@ -395,10 +389,8 @@ C {sky130_stdcells/inv_1.sym} -210 -530 0 0 {name=x42 VGND=VSS VNB=VSS VPB=VDD V
 C {sky130_stdcells/inv_4.sym} -50 -530 0 0 {name=x43 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_8.sym} 120 -610 0 0 {name=x44 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_8.sym} 120 -470 0 0 {name=x45 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_16.sym} 280 -670 0 0 {name=x46 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_16.sym} 280 -590 0 0 {name=x47 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_16.sym} 280 -670 0 0 {name=x48 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_16.sym} 280 -510 0 0 {name=x49 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_16.sym} 280 -430 0 0 {name=x50 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_16.sym} 280 -510 0 0 {name=x51 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} -300 -530 0 0 {name=l2 sig_type=std_logic lab=RESET}
@@ -484,3 +476,5 @@ C {devices/ipin.sym} -1210 280 0 0 {name=p34 lab=C7}
 C {devices/lab_pin.sym} -1130 280 0 0 {name=l77 sig_type=std_logic lab=C7}
 C {devices/ipin.sym} -1210 320 0 0 {name=p35 lab=C8}
 C {devices/lab_pin.sym} -1130 320 0 0 {name=l78 sig_type=std_logic lab=C8}
+C {devices/ipin.sym} -330 -470 0 0 {name=p36 lab=RESET}
+C {devices/lab_pin.sym} -240 -470 0 0 {name=l79 sig_type=std_logic lab=RESET}
