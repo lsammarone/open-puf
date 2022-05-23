@@ -1,0 +1,101 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1652660405
+<< nwell >>
+rect -54 614 336 878
+<< pwell >>
+rect -54 -136 278 224
+<< psubdiff >>
+rect 44 -52 204 -48
+rect 44 -90 92 -52
+rect 144 -90 204 -52
+rect 44 -96 204 -90
+<< nsubdiff >>
+rect 162 806 296 822
+rect 162 770 188 806
+rect 226 770 296 806
+rect 162 752 296 770
+<< psubdiffcont >>
+rect 92 -90 144 -52
+<< nsubdiffcont >>
+rect 188 770 226 806
+<< poly >>
+rect 28 318 206 350
+rect 140 240 206 318
+<< locali >>
+rect 32 846 146 848
+rect 32 814 314 846
+rect 32 766 66 814
+rect 110 806 314 814
+rect 110 770 188 806
+rect 226 770 314 806
+rect 110 766 314 770
+rect 32 738 314 766
+rect -36 -52 234 -34
+rect -36 -56 92 -52
+rect -36 -96 -26 -56
+rect 20 -90 92 -56
+rect 144 -90 234 -52
+rect 20 -96 234 -90
+rect -36 -112 234 -96
+<< viali >>
+rect 66 766 110 814
+rect -26 -96 20 -56
+<< metal1 >>
+rect 42 814 132 828
+rect 42 766 66 814
+rect 110 766 132 814
+rect 42 752 132 766
+rect 128 716 186 718
+rect 128 656 366 716
+rect 76 618 142 626
+rect -50 218 0 614
+rect 76 566 82 618
+rect 134 566 142 618
+rect 76 558 142 566
+rect 188 418 278 618
+rect 32 320 90 386
+rect 144 246 202 308
+rect -50 88 52 218
+rect 92 146 158 152
+rect 92 94 100 146
+rect 152 94 158 146
+rect 232 100 278 418
+rect 92 88 158 94
+rect 306 60 366 656
+rect 46 -2 366 60
+rect -38 -56 34 -36
+rect -38 -96 -26 -56
+rect 20 -96 34 -56
+rect -38 -112 34 -96
+<< via1 >>
+rect 82 566 134 618
+rect 100 94 152 146
+<< metal2 >>
+rect 76 618 142 626
+rect 76 566 82 618
+rect 134 566 142 618
+rect 76 558 142 566
+rect 92 152 142 558
+rect 92 146 158 152
+rect 92 94 100 146
+rect 152 94 158 146
+rect 92 88 158 94
+use sky130_fd_pr__nfet_01v8_PX9ZJG  1
+timestamp 1651704829
+transform 1 0 125 0 1 153
+box -125 -153 125 153
+use sky130_fd_pr__pfet_01v8_hvt_SH6FHF  2
+timestamp 1651708573
+transform 1 0 109 0 1 518
+box -161 -200 161 200
+<< labels >>
+flabel metal1 -40 298 -10 358 1 FreeSans 160 0 0 0 IN1
+flabel metal1 242 308 270 360 1 FreeSans 160 0 0 0 IN2
+flabel metal1 320 308 350 356 1 FreeSans 160 0 0 0 S
+flabel metal1 40 326 80 376 1 FreeSans 160 0 0 0 Sbar
+flabel metal2 104 328 130 366 1 FreeSans 160 0 0 0 OUT
+flabel pwell -30 -110 22 -52 1 FreeSans 160 0 0 0 VSS
+flabel nwell 54 760 118 814 1 FreeSans 160 0 0 0 VDD
+<< end >>
