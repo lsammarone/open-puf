@@ -265,8 +265,6 @@ N 3330 -50 3430 -50 { lab=#net32}
 N 3330 -120 3620 -120 { lab=VDD}
 N -560 -400 -490 -400 { lab=VDD}
 N -560 -350 -490 -350 { lab=VSS}
-N -110 90 -110 160 { lab=#net15}
-N -30 160 20 160 { lab=OUT}
 N -170 -530 -90 -530 { lab=#net33}
 N -10 -610 -10 -530 { lab=#net34}
 N -10 -610 80 -610 { lab=#net34}
@@ -317,8 +315,42 @@ N -1220 200 -1100 200 { lab=C5}
 N -1220 240 -1100 240 { lab=C6}
 N -1220 280 -1100 280 { lab=C7}
 N -1220 320 -1100 320 { lab=C8}
-N -340 -470 -280 -470 { lab=RESET}
-N -280 -470 -180 -470 { lab=RESET}
+N -330 -750 -270 -750 { lab=RESET}
+N -270 -750 -170 -750 { lab=RESET}
+N 6840 -10 6860 -10 { lab=OUT}
+N 6860 -10 6860 170 { lab=OUT}
+N 6860 170 6870 170 { lab=OUT}
+N 6620 -10 6650 -10 { lab=#net37}
+N 6400 -10 6420 -10 { lab=#net38}
+N 6170 -10 6200 -10 { lab=#net39}
+N 5950 -10 5990 -10 { lab=#net40}
+N 5730 -10 5770 -10 { lab=#net41}
+N 5510 -10 5550 -10 { lab=#net42}
+N 5280 -10 5320 -10 { lab=#net43}
+N 5060 -10 5100 -10 { lab=#net44}
+N 4840 -10 4880 -10 { lab=#net45}
+N 4620 -10 4650 -10 { lab=#net46}
+N 4400 -10 4430 -10 { lab=#net47}
+N 4180 -10 4230 -10 { lab=#net48}
+N 3950 -10 3980 -10 { lab=#net49}
+N 3730 -10 3770 -10 { lab=#net50}
+N 3510 -10 3550 -10 { lab=#net51}
+N 3250 -10 3290 -10 { lab=#net52}
+N 3030 -10 3060 -10 { lab=#net53}
+N 2810 -10 2840 -10 { lab=#net54}
+N 2580 -10 2620 -10 { lab=#net55}
+N 2360 -10 2420 -10 { lab=#net56}
+N 2140 -10 2180 -10 { lab=#net57}
+N 1920 -10 1960 -10 { lab=#net58}
+N 1690 -10 1740 -10 { lab=#net59}
+N 1470 -10 1500 -10 { lab=#net60}
+N 1250 -10 1280 -10 { lab=#net61}
+N 1030 -10 1060 -10 { lab=#net62}
+N 810 -10 840 -10 { lab=#net63}
+N 590 -10 640 -10 { lab=#net64}
+N 360 -10 390 -10 { lab=#net65}
+N 140 -10 180 -10 { lab=#net66}
+N -80 -10 -30 -10 { lab=#net67}
 C {singlestage.sym} -20 -50 0 0 {name=x1}
 C {singlestage.sym} 200 -50 0 0 {name=x2}
 C {singlestage.sym} 420 -50 0 0 {name=x3}
@@ -382,8 +414,7 @@ C {devices/iopin.sym} -500 -400 0 0 {name=p1 lab=VDD}
 C {devices/lab_pin.sym} -530 -400 0 0 {name=l23 sig_type=std_logic lab=VDD}
 C {devices/iopin.sym} -500 -350 0 0 {name=p2 lab=VSS}
 C {devices/lab_pin.sym} -530 -350 0 0 {name=l27 sig_type=std_logic lab=VSS}
-C {sky130_stdcells/buf_1.sym} -70 160 0 0 {name=x41 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/opin.sym} 10 160 0 0 {name=p3 lab=OUT}
+C {devices/opin.sym} 6860 170 0 0 {name=p3 lab=OUT}
 C {devices/lab_pin.sym} 40 30 0 0 {name=l1 sig_type=std_logic lab=VSS}
 C {sky130_stdcells/inv_1.sym} -210 -530 0 0 {name=x42 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_4.sym} -50 -530 0 0 {name=x43 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
@@ -394,10 +425,6 @@ C {sky130_stdcells/inv_16.sym} 280 -670 0 0 {name=x48 VGND=VSS VNB=VSS VPB=VDD V
 C {sky130_stdcells/inv_16.sym} 280 -430 0 0 {name=x50 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_16.sym} 280 -510 0 0 {name=x51 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} -300 -530 0 0 {name=l2 sig_type=std_logic lab=RESET}
-C {devices/lab_pin.sym} 360 -670 0 0 {name=l3 sig_type=std_logic lab=r1}
-C {devices/lab_pin.sym} 350 -590 0 0 {name=l4 sig_type=std_logic lab=r2}
-C {devices/lab_pin.sym} 350 -510 0 0 {name=l6 sig_type=std_logic lab=r3}
-C {devices/lab_pin.sym} 360 -430 0 0 {name=l17 sig_type=std_logic lab=r4}
 C {devices/lab_pin.sym} -80 -130 0 0 {name=l25 sig_type=std_logic lab=r1}
 C {devices/lab_pin.sym} 1720 -130 0 0 {name=l26 sig_type=std_logic lab=r2}
 C {devices/lab_pin.sym} 3540 -130 0 0 {name=l28 sig_type=std_logic lab=r3}
@@ -476,5 +503,9 @@ C {devices/ipin.sym} -1210 280 0 0 {name=p34 lab=C7}
 C {devices/lab_pin.sym} -1130 280 0 0 {name=l77 sig_type=std_logic lab=C7}
 C {devices/ipin.sym} -1210 320 0 0 {name=p35 lab=C8}
 C {devices/lab_pin.sym} -1130 320 0 0 {name=l78 sig_type=std_logic lab=C8}
-C {devices/ipin.sym} -330 -470 0 0 {name=p36 lab=RESET}
-C {devices/lab_pin.sym} -240 -470 0 0 {name=l79 sig_type=std_logic lab=RESET}
+C {devices/ipin.sym} -320 -750 0 0 {name=p36 lab=RESET}
+C {devices/lab_pin.sym} -230 -750 0 0 {name=l79 sig_type=std_logic lab=RESET}
+C {devices/lab_pin.sym} 360 -670 0 0 {name=l3 sig_type=std_logic lab=r1}
+C {devices/lab_pin.sym} 350 -590 0 0 {name=l4 sig_type=std_logic lab=r2}
+C {devices/lab_pin.sym} 350 -510 0 0 {name=l6 sig_type=std_logic lab=r3}
+C {devices/lab_pin.sym} 350 -430 0 0 {name=l17 sig_type=std_logic lab=r4}

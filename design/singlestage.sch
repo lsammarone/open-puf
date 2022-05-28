@@ -66,6 +66,10 @@ N -150 170 -150 250 { lab=#net6}
 N -150 250 -130 250 { lab=#net6}
 N -250 140 -100 140 { lab=#net5}
 N -250 140 -250 170 { lab=#net5}
+N 340 0 380 -0 { lab=OUT}
+N 260 0 340 -0 { lab=OUT}
+N 250 0 250 70 { lab=OUT}
+N 330 70 360 70 { lab=xxx}
 C {sky130_stdcells/nor2_1.sym} 40 -30 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nor2_1.sym} 40 80 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {demux2-1.sym} -60 20 0 0 {name=x3}
@@ -81,7 +85,7 @@ C {devices/iopin.sym} 10 -130 0 0 {name=p4 lab=VSS
 }
 C {devices/iopin.sym} 80 -130 0 0 {name=p5 lab=VDD
 }
-C {devices/opin.sym} 260 0 0 0 {name=p6 lab=OUT
+C {devices/opin.sym} 370 0 0 0 {name=p6 lab=OUT
 }
 C {devices/lab_pin.sym} 140 -90 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -90 200 0 0 {name=l2 sig_type=std_logic lab=VDD}
@@ -114,3 +118,5 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_stdcells/inv_1.sym} -320 170 0 0 {name=x6 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/buf_1.sym} 290 70 0 0 {name=x7 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/opin.sym} 350 70 0 0 {name=p7 lab=buf_out}
