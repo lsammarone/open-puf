@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654312295
+timestamp 1654144167
 << nwell >>
 rect -396 700 772 1034
 rect 258 -422 630 -22
@@ -303,7 +303,7 @@ rect 940 1120 1290 1134
 rect 940 1004 961 1120
 rect 1269 1004 1290 1120
 rect 940 990 1290 1004
-rect -566 816 970 844
+rect -566 816 1322 844
 rect -124 710 -96 816
 rect -164 704 -96 710
 rect -164 652 -154 704
@@ -430,41 +430,49 @@ rect 1023 -1090 1047 -1034
 rect 1103 -1090 1127 -1034
 rect 1183 -1090 1207 -1034
 rect 1263 -1090 1322 -1034
-rect -566 -1184 1322 -1090
-use sky130_fd_pr__pfet_01v8_hvt_UUWA33  1
-timestamp 1654312295
+rect -566 -1185 1322 -1090
+use sky130_fd_pr__pfet_01v8_hvt_UUWA33  1 ~/open-puf/layout
+timestamp 1654066915
 transform 1 0 -125 0 1 -222
 box -109 -200 109 200
 use sky130_fd_pr__pfet_01v8_hvt_UUWA33  2
-timestamp 1654312295
+timestamp 1654066915
 transform 1 0 521 0 1 -222
 box -109 -200 109 200
-use demux  demux_0
-timestamp 1654312295
+use demux  demux_0 ~/open-puf/layout
+timestamp 1654066915
 transform 1 0 36 0 1 156
 box -76 -122 336 878
-use mux  mux_0
-timestamp 1654312295
+use mux  mux_0 ~/open-puf/layout
+timestamp 1654066915
 transform 1 0 34 0 1 -900
 box -54 -122 366 878
-use sky130_fd_sc_hd__buf_1  sky130_fd_sc_hd__buf_1_0
-timestamp 1654312295
+use sky130_fd_sc_hd__buf_1  sky130_fd_sc_hd__buf_1_0 ~/open-puf/layout
+timestamp 1654066915
 transform 1 0 1008 0 1 -606
 box -38 -48 314 592
-use sky130_fd_sc_hd__inv_1#0  sky130_fd_sc_hd__inv_1_0
-timestamp 1654312295
+use sky130_fd_sc_hd__inv_1#0  sky130_fd_sc_hd__inv_1_0 ~/open-puf/layout
+timestamp 1654066915
 transform 1 0 662 0 1 -604
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1#0  sky130_fd_sc_hd__inv_1_1
-timestamp 1654312295
+timestamp 1654066915
 transform 1 0 -534 0 1 -612
 box -38 -48 314 592
-use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_0
-timestamp 1654312295
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_0 ~/open-puf/layout
+timestamp 1654066915
 transform 1 0 -356 0 1 442
 box -38 -48 314 592
 use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_1
-timestamp 1654312295
+timestamp 1654066915
 transform 1 0 458 0 1 442
 box -38 -48 314 592
+<< labels >>
+flabel metal2 -566 290 -374 326 1 FreeSans 800 0 0 0 IN
+flabel metal2 786 290 1322 326 1 FreeSans 800 0 0 0 OUT
+flabel metal3 -574 938 967 1192 1 FreeSans 800 0 0 0 VDD
+flabel metal3 -566 -1184 961 -930 1 FreeSans 800 0 0 0 VSS
+flabel metal2 -554 -1014 -510 -392 1 FreeSans 800 0 0 0 C
+flabel metal2 -566 816 1322 844 1 FreeSans 800 0 0 0 RESET
+flabel metal1 1270 -404 1298 -326 1 FreeSans 800 0 0 0 buf_out
 << end >>

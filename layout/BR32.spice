@@ -1,0 +1,246 @@
+.subckt BR32 VDD VSS OUT C9 C10 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20 C21 C22 C23 C24 C25 C26
++ C27 C28 C29 C30 C31 C32 C1 C2 C3 C4 C5 C6 C7 C8 RESET
+*.iopin VDD
+*.iopin VSS
+*.opin OUT
+*.ipin C9
+*.ipin C10
+*.ipin C11
+*.ipin C12
+*.ipin C13
+*.ipin C14
+*.ipin C15
+*.ipin C16
+*.ipin C17
+*.ipin C18
+*.ipin C19
+*.ipin C20
+*.ipin C21
+*.ipin C22
+*.ipin C23
+*.ipin C24
+*.ipin C25
+*.ipin C26
+*.ipin C27
+*.ipin C28
+*.ipin C29
+*.ipin C30
+*.ipin C31
+*.ipin C32
+*.ipin C1
+*.ipin C2
+*.ipin C3
+*.ipin C4
+*.ipin C5
+*.ipin C6
+*.ipin C7
+*.ipin C8
+*.ipin RESET
+x1 r1 VDD VSS net1 net15 C1 singlestage
+x2 r1 VDD VSS net2 net1 C2 singlestage
+x3 r1 VDD VSS net3 net2 C3 singlestage
+x4 r1 VDD VSS net4 net3 C4 singlestage
+x5 r1 VDD VSS net5 net4 C5 singlestage
+x6 r1 VDD VSS net6 net5 C6 singlestage
+x7 r1 VDD VSS net7 net6 C7 singlestage
+x8 r1 VDD VSS net8 net7 C8 singlestage
+x13 r2 VDD VSS net12 net11 C13 singlestage
+x14 r2 VDD VSS net13 net12 C14 singlestage
+x15 r2 VDD VSS net14 net13 C15 singlestage
+x16 r2 VDD VSS net32 net14 C16 singlestage
+x17 r2 VDD VSS net16 net8 C9 singlestage
+x18 r2 VDD VSS net9 net16 C10 singlestage
+x19 r2 VDD VSS net10 net9 C11 singlestage
+x20 r2 VDD VSS net11 net10 C12 singlestage
+x21 r3 VDD VSS net17 net32 C17 singlestage
+x22 r3 VDD VSS net18 net17 C18 singlestage
+x23 r3 VDD VSS net19 net18 C19 singlestage
+x24 r3 VDD VSS net20 net19 C20 singlestage
+x25 r3 VDD VSS net21 net20 C21 singlestage
+x26 r3 VDD VSS net22 net21 C22 singlestage
+x27 r3 VDD VSS net23 net22 C23 singlestage
+x28 r3 VDD VSS net24 net23 C24 singlestage
+x33 r4 VDD VSS net28 net27 C29 singlestage
+x34 r4 VDD VSS net29 net28 C30 singlestage
+x35 r4 VDD VSS net30 net29 C31 singlestage
+x36 r4 VDD VSS net15 net30 C32 singlestage
+x37 r4 VDD VSS net31 net24 C25 singlestage
+x38 r4 VDD VSS net25 net31 C26 singlestage
+x39 r4 VDD VSS net26 net25 C27 singlestage
+x40 r4 VDD VSS net27 net26 C28 singlestage
+x41 net15 VSS VSS VDD VDD OUT sky130_fd_sc_hd__buf_1
+x42 RESET VSS VSS VDD VDD net33 sky130_fd_sc_hd__inv_1
+x43 net33 VSS VSS VDD VDD net34 sky130_fd_sc_hd__inv_4
+x44 net34 VSS VSS VDD VDD net35 sky130_fd_sc_hd__inv_8
+x45 net34 VSS VSS VDD VDD net36 sky130_fd_sc_hd__inv_8
+x47 net35 VSS VSS VDD VDD r2 sky130_fd_sc_hd__inv_16
+x48 net35 VSS VSS VDD VDD r1 sky130_fd_sc_hd__inv_16
+x50 net36 VSS VSS VDD VDD r4 sky130_fd_sc_hd__inv_16
+x51 net36 VSS VSS VDD VDD r3 sky130_fd_sc_hd__inv_16
+.ends
+
+* expanding   symbol:  singlestage.sym # of pins=6
+* sym_path: /home/users/lsammaro/open-puf/design/singlestage.sym
+* sch_path: /home/users/lsammaro/open-puf/design/singlestage.sch
+.subckt singlestage  RESET VDD VSS OUT IN C
+*.ipin IN
+*.ipin C
+*.ipin RESET
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+x1 RESET net1 VSS VSS VDD VDD net3 sky130_fd_sc_hd__nor2_1
+x2 RESET net2 VSS VSS VDD VDD net4 sky130_fd_sc_hd__nor2_1
+x3 net6 VSS net1 VDD IN net5 net2 demux2-1
+x4 net6 VSS net3 VDD OUT net5 net4 mux2-1
+x5 net5 VSS VSS VDD VDD net6 sky130_fd_sc_hd__inv_1
+XM1 net1 net6 VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 net2 net5 VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+x6 C VSS VSS VDD VDD net5 sky130_fd_sc_hd__inv_1
+.ends
+
+
+* expanding   symbol:  demux2-1.sym # of pins=7
+* sym_path: /home/users/lsammaro/open-puf/design/demux2-1.sym
+* sch_path: /home/users/lsammaro/open-puf/design/demux2-1.sch
+.subckt demux2-1  S VSS OUT1 VDD IN Sbar OUT2
+*.ipin Sbar
+*.ipin S
+*.iopin VSS
+*.iopin VDD
+*.opin OUT1
+*.opin OUT2
+*.ipin IN
+XM2 IN S OUT1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM1 IN Sbar OUT2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 IN Sbar OUT1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 IN S OUT2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+* expanding   symbol:  mux2-1.sym # of pins=7
+* sym_path: /home/users/lsammaro/open-puf/design/mux2-1.sym
+* sch_path: /home/users/lsammaro/open-puf/design/mux2-1.sch
+.subckt mux2-1  S VSS IN1 VDD OUT Sbar IN2
+*.ipin IN1
+*.ipin IN2
+*.ipin Sbar
+*.ipin S
+*.opin OUT
+*.iopin VSS
+*.iopin VDD
+XM2 IN1 S OUT VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM1 IN2 Sbar OUT VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 IN1 Sbar OUT VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 IN2 S OUT VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+.subckt sky130_fd_sc_hd__buf_1 A VGND VNB VPB VPWR X
+X0 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 w=520000u l=150000u
+X1 a_27_47# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=790000u l=150000u
+X2 a_27_47# A VGND VNB sky130_fd_pr__nfet_01v8 w=520000u l=150000u
+X3 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt w=790000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__inv_4 A VGND VNB VPB VPWR Y
+X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X2 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X3 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X4 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X5 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X6 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X7 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__inv_8 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X3 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X4 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X6 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X7 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X8 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X9 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X10 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X11 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X12 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X13 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X14 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X15 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__inv_16 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X2 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X4 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X6 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X7 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X8 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X9 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X10 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X11 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X12 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X13 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X14 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X15 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X16 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X17 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X18 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X19 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X20 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X21 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X22 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X23 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X24 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X25 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X26 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X27 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X28 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X29 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X30 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X31 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__nor2_1 A B VGND VNB VPB VPWR Y
+X0 a_109_297# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X1 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X2 VGND B Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X3 Y B a_109_297# VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+
+
+
+
+** flattened .save nodes
+.end

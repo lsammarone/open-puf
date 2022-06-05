@@ -1,0 +1,57 @@
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell demux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell mux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit singlestage (0)(1 instance)
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: singlestage                     |Circuit 2: unitcell2buf_lvs_flat           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (14)           |sky130_fd_pr__pfet_01v8_hvt (14)           
+sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
+Number of devices: 26                      |Number of devices: 26                      
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: singlestage                     |Circuit 2: unitcell2buf_lvs_flat           
+-------------------------------------------|-------------------------------------------
+buf_out                                    |buf_out                                    
+C                                          |C                                          
+OUT                                        |OUT                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+RESET                                      |RESET                                      
+IN                                         |IN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes singlestage and unitcell2buf_lvs_flat are equivalent.
+Circuits match uniquely.

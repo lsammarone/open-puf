@@ -1,0 +1,188 @@
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell demux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell mux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit BR128 (0)(42 instances)
+Flattening unmatched subcell singlestage in circuit BR128 (0)(128 instances)
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Class BR128:  Merged 1302 devices.
+Class BR128_lvs_tap_flat:  Merged 1302 devices.
+
+Subcircuit summary:
+Circuit 1: BR128                           |Circuit 2: BR128_lvs_tap_flat              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1557)             |sky130_fd_pr__nfet_01v8 (1557)             
+sky130_fd_pr__pfet_01v8_hvt (1813)         |sky130_fd_pr__pfet_01v8_hvt (1813)         
+Number of devices: 3370                    |Number of devices: 3370                    
+Number of nets: 1560                       |Number of nets: 1560                       
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: BR128                           |Circuit 2: BR128_lvs_tap_flat              
+-------------------------------------------|-------------------------------------------
+RESET                                      |RESET                                      
+C[96]                                      |C[96]                                      
+C[97]                                      |C[97]                                      
+C[98]                                      |C[98]                                      
+C[99]                                      |C[99]                                      
+C[100]                                     |C[100]                                     
+C[101]                                     |C[101]                                     
+C[102]                                     |C[102]                                     
+C[103]                                     |C[103]                                     
+C[104]                                     |C[104]                                     
+C[105]                                     |C[105]                                     
+C[106]                                     |C[106]                                     
+C[107]                                     |C[107]                                     
+C[108]                                     |C[108]                                     
+C[109]                                     |C[109]                                     
+C[110]                                     |C[110]                                     
+C[111]                                     |C[111]                                     
+C[112]                                     |C[112]                                     
+C[113]                                     |C[113]                                     
+C[114]                                     |C[114]                                     
+C[115]                                     |C[115]                                     
+C[116]                                     |C[116]                                     
+C[117]                                     |C[117]                                     
+C[118]                                     |C[118]                                     
+C[119]                                     |C[119]                                     
+C[120]                                     |C[120]                                     
+C[121]                                     |C[121]                                     
+C[122]                                     |C[122]                                     
+C[123]                                     |C[123]                                     
+C[124]                                     |C[124]                                     
+C[125]                                     |C[125]                                     
+C[126]                                     |C[126]                                     
+C[127]                                     |C[127]                                     
+C[88]                                      |C[88]                                      
+C[89]                                      |C[89]                                      
+C[90]                                      |C[90]                                      
+C[91]                                      |C[91]                                      
+C[92]                                      |C[92]                                      
+C[93]                                      |C[93]                                      
+C[94]                                      |C[94]                                      
+C[95]                                      |C[95]                                      
+C[80]                                      |C[80]                                      
+C[81]                                      |C[81]                                      
+C[82]                                      |C[82]                                      
+C[83]                                      |C[83]                                      
+C[84]                                      |C[84]                                      
+C[85]                                      |C[85]                                      
+C[86]                                      |C[86]                                      
+C[87]                                      |C[87]                                      
+C[72]                                      |C[72]                                      
+C[73]                                      |C[73]                                      
+C[74]                                      |C[74]                                      
+C[75]                                      |C[75]                                      
+C[76]                                      |C[76]                                      
+C[77]                                      |C[77]                                      
+C[78]                                      |C[78]                                      
+C[79]                                      |C[79]                                      
+C[64]                                      |C[64]                                      
+C[65]                                      |C[65]                                      
+C[66]                                      |C[66]                                      
+C[67]                                      |C[67]                                      
+C[68]                                      |C[68]                                      
+C[69]                                      |C[69]                                      
+C[70]                                      |C[70]                                      
+C[71]                                      |C[71]                                      
+C[32]                                      |C[32]                                      
+C[33]                                      |C[33]                                      
+C[34]                                      |C[34]                                      
+C[35]                                      |C[35]                                      
+C[36]                                      |C[36]                                      
+C[37]                                      |C[37]                                      
+C[38]                                      |C[38]                                      
+C[39]                                      |C[39]                                      
+C[40]                                      |C[40]                                      
+C[41]                                      |C[41]                                      
+C[42]                                      |C[42]                                      
+C[43]                                      |C[43]                                      
+C[44]                                      |C[44]                                      
+C[45]                                      |C[45]                                      
+C[46]                                      |C[46]                                      
+C[47]                                      |C[47]                                      
+C[48]                                      |C[48]                                      
+C[49]                                      |C[49]                                      
+C[50]                                      |C[50]                                      
+C[51]                                      |C[51]                                      
+C[52]                                      |C[52]                                      
+C[53]                                      |C[53]                                      
+C[54]                                      |C[54]                                      
+C[55]                                      |C[55]                                      
+C[56]                                      |C[56]                                      
+C[57]                                      |C[57]                                      
+C[58]                                      |C[58]                                      
+C[59]                                      |C[59]                                      
+C[60]                                      |C[60]                                      
+C[61]                                      |C[61]                                      
+C[62]                                      |C[62]                                      
+C[63]                                      |C[63]                                      
+C[24]                                      |C[24]                                      
+C[25]                                      |C[25]                                      
+C[26]                                      |C[26]                                      
+C[27]                                      |C[27]                                      
+C[28]                                      |C[28]                                      
+C[29]                                      |C[29]                                      
+C[30]                                      |C[30]                                      
+C[31]                                      |C[31]                                      
+C[16]                                      |C[16]                                      
+C[17]                                      |C[17]                                      
+C[18]                                      |C[18]                                      
+C[19]                                      |C[19]                                      
+C[20]                                      |C[20]                                      
+C[21]                                      |C[21]                                      
+C[22]                                      |C[22]                                      
+C[23]                                      |C[23]                                      
+C[8]                                       |C[8]                                       
+C[9]                                       |C[9]                                       
+C[10]                                      |C[10]                                      
+C[11]                                      |C[11]                                      
+C[12]                                      |C[12]                                      
+C[13]                                      |C[13]                                      
+C[14]                                      |C[14]                                      
+C[15]                                      |C[15]                                      
+C[0]                                       |C[0]                                       
+C[1]                                       |C[1]                                       
+C[2]                                       |C[2]                                       
+C[3]                                       |C[3]                                       
+C[4]                                       |C[4]                                       
+C[5]                                       |C[5]                                       
+C[6]                                       |C[6]                                       
+C[7]                                       |C[7]                                       
+OUT                                        |OUT                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BR128 and BR128_lvs_tap_flat are equivalent.
+Circuits match uniquely.

@@ -1,0 +1,311 @@
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell demux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell mux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_4 in circuit BR64 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit BR64 (0)(21 instances)
+Flattening unmatched subcell singlestage in circuit BR64 (0)(64 instances)
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Cell BR64 disconnected node: C[63],C[62],C[61],C[60],C[59],C[58],C[57],C[56],C[55],C[54],C[53],C[52],C[51],C[50],C[49],C[48],C[47],C[46],C[45],C[44],C[43],C[42],C[41],C[40],C[39],C[38],C[37],C[36],C[35],C[34],C[33],C[32],C[31],C[30],C[29],C[28],C[27],C[26],C[25],C[24],C[23],C[22],C[21],C[20],C[19],C[18],C[17],C[16],C[15],C[14],C[13],C[12],C[11],C[10],C[9],C[8],C[7],C[6],C[5],C[4],C[3],C[2],C[1],C[0]
+Class BR64:  Merged 656 devices.
+Class BR64_flat:  Merged 656 devices.
+
+Cell BR64 disconnected node: C[63],C[62],C[61],C[60],C[59],C[58],C[57],C[56],C[55],C[54],C[53],C[52],C[51],C[50],C[49],C[48],C[47],C[46],C[45],C[44],C[43],C[42],C[41],C[40],C[39],C[38],C[37],C[36],C[35],C[34],C[33],C[32],C[31],C[30],C[29],C[28],C[27],C[26],C[25],C[24],C[23],C[22],C[21],C[20],C[19],C[18],C[17],C[16],C[15],C[14],C[13],C[12],C[11],C[10],C[9],C[8],C[7],C[6],C[5],C[4],C[3],C[2],C[1],C[0]
+
+Subcircuit summary:
+Circuit 1: BR64                            |Circuit 2: BR64_flat                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (780)              |sky130_fd_pr__nfet_01v8 (780)              
+sky130_fd_pr__pfet_01v8_hvt (908)          |sky130_fd_pr__pfet_01v8_hvt (908)          
+Number of devices: 1688                    |Number of devices: 1688                    
+Number of nets: 734 **Mismatch**           |Number of nets: 783 **Mismatch**           
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: BR64                            |Circuit 2: BR64_flat                       
+
+---------------------------------------------------------------------------------------
+Net: OUT                                   |Net: OUT                                   
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage5[62]/sky130_fd_sc_hd__buf |Net: a_24173_6365#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage5[61]/sky130_fd_sc_hd__buf |Net: a_18765_625#                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage5[60]/sky130_fd_sc_hd__buf |Net: a_14733_6365#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage5[59]/sky130_fd_sc_hd__buf |Net: a_41165_6365#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage5[58]/sky130_fd_sc_hd__buf |Net: a_54375_6365#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+Net: singlestage5[57]/sky130_fd_sc_hd__buf |Net: a_11219_625#                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+Net: singlestage5[56]/sky130_fd_sc_hd__buf |Net: a_31725_6365#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage3[7]/sky130_fd_sc_hd__buf_ |Net: a_44935_6365#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+Net: singlestage1[15]/sky130_fd_sc_hd__buf |Net: a_3411_6365#                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage2[23]/sky130_fd_sc_hd__buf |Net: a_54631_625#                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+Net: singlestage4[31]/sky130_fd_sc_hd__buf |Net: a_5555_625#                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage6[55]/sky130_fd_sc_hd__buf |Net: a_26317_625#                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+Net: singlestage7[47]/sky130_fd_sc_hd__buf |Net: a_52487_6365#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: singlestage8[39]/sky130_fd_sc_hd__buf |Net: a_20653_625#                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 8    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_10963_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_22285_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_43309_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_1523_6365#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_35757_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_58407_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_5299_6365#                          
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |                                           
+(no matching net)                          |Net: a_20397_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_39277_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_52743_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_24429_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_29837_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_16877_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_3667_625#                           
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_41421_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_9075_6365#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_50599_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_33869_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_56519_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_9331_625#                           
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_48967_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_7187_6365#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_47079_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_50855_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_n365_6365#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_39533_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_12851_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_14995_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_1779_625#                           
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_37389_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_13107_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_58151_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_48711_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_28205_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_31981_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_27949_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_30093_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_18509_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_7443_625#                           
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_35501_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_22541_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_56263_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_46823_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_45197_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_26061_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_37645_625#                          
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_16621_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_43053_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: a_33613_6365#                         
+                                           |  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

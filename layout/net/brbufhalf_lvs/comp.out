@@ -1,0 +1,60 @@
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell demux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell mux2-1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit singlestage (0)(2 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit singlestage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit brbufhalf_lvs (0)(4 instances)
+Flattening unmatched subcell singlestage in circuit brbufhalf_lvs (0)(16 instances)
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Class brbufhalf_lvs:  Merged 124 devices.
+Class brbufhalf_lvs_flat:  Merged 124 devices.
+
+Subcircuit summary:
+Circuit 1: brbufhalf_lvs                   |Circuit 2: brbufhalf_lvs_flat              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (194)              |sky130_fd_pr__nfet_01v8 (194)              
+sky130_fd_pr__pfet_01v8_hvt (226)          |sky130_fd_pr__pfet_01v8_hvt (226)          
+Number of devices: 420                     |Number of devices: 420                     
+Number of nets: 199                        |Number of nets: 199                        
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: brbufhalf_lvs                   |Circuit 2: brbufhalf_lvs_flat              
+-------------------------------------------|-------------------------------------------
+IN                                         |IN                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+RESET1                                     |RESET1                                     
+RESET2                                     |RESET2                                     
+OUT                                        |OUT                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes brbufhalf_lvs and brbufhalf_lvs_flat are equivalent.
+Circuits match uniquely.

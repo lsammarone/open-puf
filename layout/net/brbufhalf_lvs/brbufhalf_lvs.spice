@@ -1,0 +1,109 @@
+**.subckt brbufhalf_lvs VDD VSS OUT RESET1 RESET2 IN
+*.iopin VDD
+*.iopin VSS
+*.opin OUT
+*.ipin RESET1
+*.ipin RESET2
+*.ipin IN
+x47 RESET2 VSS VSS VDD VDD r2 sky130_fd_sc_hd__inv_16
+x48 RESET1 VSS VSS VDD VDD r1 sky130_fd_sc_hd__inv_16
+x4 RESET1 VSS VSS VDD VDD r1 sky130_fd_sc_hd__inv_16
+x5 RESET2 VSS VSS VDD VDD r2 sky130_fd_sc_hd__inv_16
+x2[8] r2 VDD VSS out[8] out[7] buf_out[8] net1[7] singlestage
+x2[9] r2 VDD VSS out[9] out[8] buf_out[9] net1[6] singlestage
+x2[10] r2 VDD VSS out[10] out[9] buf_out[10] net1[5] singlestage
+x2[11] r2 VDD VSS out[11] out[10] buf_out[11] net1[4] singlestage
+x2[12] r2 VDD VSS out[12] out[11] buf_out[12] net1[3] singlestage
+x2[13] r2 VDD VSS out[13] out[12] buf_out[13] net1[2] singlestage
+x2[14] r2 VDD VSS out[14] out[13] buf_out[14] net1[1] singlestage
+x2[15] r2 VDD VSS out[15] out[14] OUT net1[0] singlestage
+x4[0] r1 VDD VSS out[0] IN net2[7] net3[7] singlestage
+x4[1] r1 VDD VSS out[1] out[0] net2[6] net3[6] singlestage
+x4[2] r1 VDD VSS out[2] out[1] net2[5] net3[5] singlestage
+x4[3] r1 VDD VSS out[3] out[2] net2[4] net3[4] singlestage
+x4[4] r1 VDD VSS out[4] out[3] net2[3] net3[3] singlestage
+x4[5] r1 VDD VSS out[5] out[4] net2[2] net3[2] singlestage
+x4[6] r1 VDD VSS out[6] out[5] net2[1] net3[1] singlestage
+x4[7] r1 VDD VSS out[7] out[6] net2[0] net3[0] singlestage
+**.ends
+
+* expanding   symbol:  singlestage.sym # of pins=7
+* sym_path: /home/users/lsammaro/open-puf/design/singlestage.sym
+* sch_path: /home/users/lsammaro/open-puf/design/singlestage.sch
+.subckt singlestage  RESET VDD VSS OUT IN buf_out C
+*.ipin IN
+*.ipin C
+*.ipin RESET
+*.iopin VSS
+*.iopin VDD
+*.opin OUT
+*.opin buf_out
+x1 RESET net1 VSS VSS VDD VDD net3 sky130_fd_sc_hd__nor2_1
+x2 RESET net2 VSS VSS VDD VDD net4 sky130_fd_sc_hd__nor2_1
+x3 net6 VSS net1 VDD IN net5 net2 demux2-1
+x4 net6 VSS net3 VDD OUT net5 net4 mux2-1
+x5 net5 VSS VSS VDD VDD net6 sky130_fd_sc_hd__inv_1
+XM1 net1 net6 VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 net2 net5 VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+x6 C VSS VSS VDD VDD net5 sky130_fd_sc_hd__inv_1
+x7 OUT VSS VSS VDD VDD buf_out sky130_fd_sc_hd__buf_1
+.ends
+
+
+* expanding   symbol:  demux2-1.sym # of pins=7
+* sym_path: /home/users/lsammaro/open-puf/design/demux2-1.sym
+* sch_path: /home/users/lsammaro/open-puf/design/demux2-1.sch
+.subckt demux2-1  S VSS OUT1 VDD IN Sbar OUT2
+*.ipin Sbar
+*.ipin S
+*.iopin VSS
+*.iopin VDD
+*.opin OUT1
+*.opin OUT2
+*.ipin IN
+XM2 IN S OUT1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM1 IN Sbar OUT2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 IN Sbar OUT1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 IN S OUT2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+* expanding   symbol:  mux2-1.sym # of pins=7
+* sym_path: /home/users/lsammaro/open-puf/design/mux2-1.sym
+* sch_path: /home/users/lsammaro/open-puf/design/mux2-1.sch
+.subckt mux2-1  S VSS IN1 VDD OUT Sbar IN2
+*.ipin IN1
+*.ipin IN2
+*.ipin Sbar
+*.ipin S
+*.opin OUT
+*.iopin VSS
+*.iopin VDD
+XM2 IN1 S OUT VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM1 IN2 Sbar OUT VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 IN1 Sbar OUT VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 IN2 S OUT VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+** flattened .save nodes
+.end

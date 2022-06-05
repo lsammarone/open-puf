@@ -1,0 +1,35 @@
+.subckt sky130_fd_sc_hd__inv_16 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X2 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X4 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X6 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X7 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X8 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X9 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X10 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X11 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X12 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X13 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X14 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X15 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X16 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X17 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X18 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X19 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X20 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X21 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X22 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X23 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X24 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X25 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X26 Y A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X27 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X28 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+X29 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X30 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X31 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+

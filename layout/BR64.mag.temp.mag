@@ -1,0 +1,59 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654117903
+<< error_s >>
+rect 30517 3832 32065 4153
+<< nwell >>
+rect 14749 3456 15131 3777
+<< nsubdiff >>
+rect 14874 3629 15008 3648
+rect 14874 3595 14946 3629
+rect 14980 3595 15008 3629
+rect 14874 3578 15008 3595
+<< nsubdiffcont >>
+rect 14946 3595 14980 3629
+<< locali >>
+rect 14671 3629 15214 3649
+rect 14671 3595 14946 3629
+rect 14980 3595 15214 3629
+rect 14671 3577 15214 3595
+<< viali >>
+rect 13372 3509 13406 3554
+<< metal1 >>
+rect 7221 2829 7466 4481
+rect 13352 3554 16527 3573
+rect 13352 3509 13372 3554
+rect 13406 3509 16527 3554
+rect 13352 3492 16527 3509
+rect 13540 3410 16143 3458
+rect 22311 2871 22556 4523
+use brbufhalf  brbufhalf_0
+timestamp 1654116943
+transform 1 0 3552 0 1 -2528
+box -3552 2527 26658 5644
+use brbufhalf  brbufhalf_1
+timestamp 1654116943
+transform 1 0 33754 0 1 -2528
+box -3552 2527 26658 5644
+use brbufhalf  brbufhalf_2
+timestamp 1654116943
+transform -1 0 56430 0 -1 9968
+box -3552 2527 26658 5644
+use brbufhalf  brbufhalf_3
+timestamp 1654116943
+transform -1 0 26228 0 -1 9968
+box -3552 2527 26658 5644
+use sky130_fd_sc_hd__inv_16  sky130_fd_sc_hd__inv_16_0 ~/open-puf/layout
+timestamp 1654066915
+transform 1 0 15169 0 1 3195
+box -38 -48 1510 592
+use sky130_fd_sc_hd__inv_16  sky130_fd_sc_hd__inv_16_1
+timestamp 1654066915
+transform 1 0 13239 0 1 3195
+box -38 -48 1510 592
+use sky130_fd_sc_hd__inv_16  sky130_fd_sc_hd__inv_16_2
+timestamp 1654066915
+transform 1 0 30555 0 1 3571
+box -38 -48 1510 592
+<< end >>

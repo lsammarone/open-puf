@@ -1,54 +1,57 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1652676461
+timestamp 1654312295
 << nwell >>
 rect -54 614 336 878
 << pwell >>
-rect -54 -136 278 224
+rect 18 -122 230 -22
 << psubdiff >>
-rect 44 -52 204 -48
-rect 44 -90 92 -52
-rect 144 -90 204 -52
-rect 44 -96 204 -90
+rect 44 -54 204 -48
+rect 44 -88 101 -54
+rect 135 -88 204 -54
+rect 44 -96 204 -88
 << nsubdiff >>
-rect 162 806 296 822
-rect 162 770 188 806
-rect 226 770 296 806
-rect 162 752 296 770
+rect 162 805 296 822
+rect 162 771 190 805
+rect 224 771 296 805
+rect 162 752 296 771
 << psubdiffcont >>
-rect 92 -90 144 -52
+rect 101 -88 135 -54
 << nsubdiffcont >>
-rect 188 770 226 806
+rect 190 771 224 805
 << poly >>
 rect 28 318 206 350
 rect 140 240 206 318
 << locali >>
 rect 32 846 146 848
-rect 32 814 314 846
-rect 32 766 66 814
-rect 110 806 314 814
-rect 110 770 188 806
-rect 226 770 314 806
-rect 110 766 314 770
-rect 32 738 314 766
-rect -36 -52 234 -34
-rect -36 -56 92 -52
-rect -36 -96 -26 -56
-rect 20 -90 92 -56
-rect 144 -90 234 -52
-rect 20 -96 234 -90
-rect -36 -112 234 -96
+rect 32 807 314 846
+rect 32 773 71 807
+rect 105 805 314 807
+rect 105 773 190 805
+rect 32 771 190 773
+rect 224 771 314 805
+rect 32 738 314 771
+rect -76 664 190 700
+rect -76 50 -42 664
+rect -76 16 56 50
+rect -36 -54 234 -34
+rect -36 -59 101 -54
+rect -36 -93 -20 -59
+rect 14 -88 101 -59
+rect 135 -88 234 -54
+rect 14 -93 234 -88
+rect -36 -112 234 -93
 << viali >>
-rect 66 766 110 814
-rect -26 -96 20 -56
+rect 71 773 105 807
+rect -20 -93 14 -59
 << metal1 >>
-rect 42 814 132 828
-rect 42 766 66 814
-rect 110 766 132 814
-rect 42 752 132 766
+rect 42 807 132 828
+rect 42 773 71 807
+rect 105 773 132 807
+rect 42 752 132 773
 rect 128 716 186 718
-rect 128 656 366 716
+rect 128 656 190 716
 rect 76 618 142 626
 rect -50 218 0 614
 rect 76 566 82 618
@@ -63,12 +66,11 @@ rect 92 94 100 146
 rect 152 94 158 146
 rect 232 100 278 418
 rect 92 88 158 94
-rect 306 60 366 656
-rect 46 -2 366 60
-rect -38 -56 34 -36
-rect -38 -96 -26 -56
-rect 20 -96 34 -56
-rect -38 -112 34 -96
+rect 46 -2 110 60
+rect -38 -59 34 -36
+rect -38 -93 -20 -59
+rect 14 -93 34 -59
+rect -38 -112 34 -93
 << via1 >>
 rect 82 566 134 618
 rect 100 94 152 146
@@ -83,19 +85,11 @@ rect 92 94 100 146
 rect 152 94 158 146
 rect 92 88 158 94
 use sky130_fd_pr__nfet_01v8_PX9ZJG  1
-timestamp 1651704829
+timestamp 1654312295
 transform 1 0 125 0 1 153
-box -125 -153 125 153
+box -151 -153 151 153
 use sky130_fd_pr__pfet_01v8_hvt_SH6FHF  2
-timestamp 1651708573
+timestamp 1654312295
 transform 1 0 109 0 1 518
 box -161 -200 161 200
-<< labels >>
-flabel metal1 -38 296 -14 332 1 FreeSans 160 0 0 0 OUT1
-flabel metal1 242 314 262 330 1 FreeSans 160 0 0 0 OUT2
-flabel metal2 106 322 124 340 1 FreeSans 160 0 0 0 IN
-flabel nwell 54 760 118 814 1 FreeSans 160 0 0 0 VDD
-flabel pwell -30 -110 22 -52 1 FreeSans 160 0 0 0 VSS
-flabel metal1 328 316 346 340 1 FreeSans 160 0 0 0 S
-flabel metal1 48 326 76 362 1 FreeSans 160 0 0 0 Sbar
 << end >>
