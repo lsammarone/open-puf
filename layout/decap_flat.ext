@@ -1,0 +1,28 @@
+timestamp 1654404875
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "VDD" 2 26634 -7542 26758 -7280 m4
+port "VSS" 1 31016 -7548 31140 -7286 m4
+node "VDD" 0 0 26634 -7542 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSS" 0 0 31016 -7548 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 44804 -7314 44805 -7313 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 38064 -7316 38065 -7315 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 31364 -7332 31365 -7331 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 24660 -7334 24661 -7333 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 44804 -1014 44805 -1013 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 38064 -1016 38065 -1015 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 31364 -1032 31365 -1031 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 24660 -1034 24661 -1033 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 44804 5286 44805 5287 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 38064 5284 38065 5285 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 31364 5268 31365 5269 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 24660 5266 24661 5267 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 44804 11586 44805 11587 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 38064 11584 38065 11585 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 31364 11568 31365 11569 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 24660 11566 24661 11567 w=6000 l=6000 "None" "VDD" 23616 0 "VSS" 130 0

@@ -1,9 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654312295
+timestamp 1654643405
 << nwell >>
-rect -396 700 772 1034
+rect -404 1024 772 1034
+rect -396 703 772 1024
+rect -404 700 772 703
 rect 258 -422 630 -22
 << poly >>
 rect 194 218 224 220
@@ -16,7 +18,7 @@ rect 24 -198 110 -168
 rect 80 -272 110 -198
 << locali >>
 rect -398 970 -336 1004
-rect -80 998 68 1003
+rect -114 998 68 1003
 rect 180 1002 458 1004
 rect 346 998 460 1002
 rect -109 969 78 998
@@ -432,39 +434,39 @@ rect 1183 -1090 1207 -1034
 rect 1263 -1090 1322 -1034
 rect -566 -1185 1322 -1090
 use sky130_fd_pr__pfet_01v8_hvt_UUWA33  1
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 -125 0 1 -222
 box -109 -200 109 200
 use sky130_fd_pr__pfet_01v8_hvt_UUWA33  2
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 521 0 1 -222
 box -109 -200 109 200
 use demux  demux_0
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 36 0 1 156
 box -76 -122 336 878
 use mux  mux_0
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 34 0 1 -900
 box -54 -122 366 878
 use sky130_fd_sc_hd__buf_1  sky130_fd_sc_hd__buf_1_0
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 1008 0 1 -606
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1#0  sky130_fd_sc_hd__inv_1_0
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 662 0 1 -604
 box -38 -48 314 592
 use sky130_fd_sc_hd__inv_1#0  sky130_fd_sc_hd__inv_1_1
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 -534 0 1 -612
 box -38 -48 314 592
 use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_0
-timestamp 1654312295
-transform 1 0 -356 0 1 442
+timestamp 1654643081
+transform 1 0 -366 0 1 442
 box -38 -48 314 592
 use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_1
-timestamp 1654312295
+timestamp 1654643081
 transform 1 0 458 0 1 442
 box -38 -48 314 592
 << end >>

@@ -1,0 +1,10 @@
+.subckt cap botplate topplate
+*.ipin botplate
+*.ipin topplate
+XC1 topplate botplate sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=4 m=4
+XC2 topplate botplate sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=4 m=4
+XC3 topplate botplate sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=4 m=4
+XC4 topplate botplate sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=4 m=4
+.ends
+** flattened .save nodes
+

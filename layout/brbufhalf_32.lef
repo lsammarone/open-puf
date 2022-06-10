@@ -1,0 +1,18 @@
+MACRO brbufhalf_32
+  CLASS BLOCK ;
+  FOREIGN brbufhalf_32 ;
+  ORIGIN 8.330 -12.635 ;
+  SIZE 141.620 BY 14.215 ;
+  OBS
+      LAYER li1 ;
+        RECT -8.120 13.500 133.100 26.695 ;
+      LAYER met1 ;
+        RECT -8.320 12.640 133.290 26.850 ;
+      LAYER met2 ;
+        RECT -8.330 12.640 133.290 25.430 ;
+      LAYER met3 ;
+        RECT -8.320 12.635 133.290 24.520 ;
+  END
+END brbufhalf_32
+END LIBRARY
+

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654310945
+timestamp 1654402208
 << nwell >>
 rect -38 261 866 582
 << pwell >>
@@ -419,29 +419,29 @@ rect 707 -17 765 17
 rect 799 -17 828 17
 rect 0 -48 828 -17
 << labels >>
-flabel locali s 213 221 247 255 0 FreeSans 312 0 0 0 A
+flabel locali s 213 221 247 255 0 FreeSans 390 0 0 0 A
 port 1 nsew
-flabel locali s 305 221 339 255 0 FreeSans 312 0 0 0 A
+flabel locali s 305 221 339 255 0 FreeSans 390 0 0 0 A
 port 1 nsew
-flabel locali s 397 221 431 255 0 FreeSans 312 0 0 0 A
+flabel locali s 397 221 431 255 0 FreeSans 390 0 0 0 A
 port 1 nsew
-flabel locali s 489 221 523 255 0 FreeSans 312 0 0 0 A
+flabel locali s 489 221 523 255 0 FreeSans 390 0 0 0 A
 port 1 nsew
-flabel locali s 581 221 615 255 0 FreeSans 312 0 0 0 A
+flabel locali s 581 221 615 255 0 FreeSans 390 0 0 0 A
 port 1 nsew
-flabel locali s 673 221 707 255 0 FreeSans 312 0 0 0 A
+flabel locali s 673 221 707 255 0 FreeSans 390 0 0 0 A
 port 1 nsew
-flabel locali s 765 221 799 255 0 FreeSans 312 0 0 0 Y
+flabel locali s 765 221 799 255 0 FreeSans 390 0 0 0 Y
 port 2 nsew
-flabel locali s 29 221 63 255 0 FreeSans 312 0 0 0 Y
+flabel locali s 29 221 63 255 0 FreeSans 390 0 0 0 Y
 port 2 nsew
-flabel pwell s 29 -17 63 17 0 FreeSans 250 0 0 0 VNB
+flabel pwell s 29 -17 63 17 0 FreeSans 312 0 0 0 VNB
 port 3 nsew
-flabel nwell s 29 527 63 561 0 FreeSans 250 0 0 0 VPB
+flabel nwell s 29 527 63 561 0 FreeSans 312 0 0 0 VPB
 port 4 nsew
-flabel metal1 s 29 -17 63 17 0 FreeSans 250 0 0 0 VGND
+flabel metal1 s 29 -17 63 17 0 FreeSans 312 0 0 0 VGND
 port 5 nsew
-flabel metal1 s 29 527 63 561 0 FreeSans 250 0 0 0 VPWR
+flabel metal1 s 29 527 63 561 0 FreeSans 312 0 0 0 VPWR
 port 6 nsew
 << properties >>
 string FIXED_BBOX 0 0 828 544

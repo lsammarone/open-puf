@@ -1,14 +1,5 @@
-Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit singlestage (0)(2 instances)
-Flattening unmatched subcell demux2-1 in circuit singlestage (0)(1 instance)
-Flattening unmatched subcell mux2-1 in circuit singlestage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit singlestage (0)(2 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit singlestage (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit BR128 (0)(42 instances)
-Flattening unmatched subcell singlestage in circuit BR128 (0)(128 instances)
-Flattening unmatched subcell sky130_fd_sc_hd__buf_2 in circuit BR128 (0)(1 instance)
-Flattening unmatched subcell sky130_fd_sc_hd__inv_8 in circuit BR128 (0)(1 instance)
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
@@ -20,8 +11,8 @@ Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_h
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
@@ -33,14 +24,23 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-Class BR128:  Merged 1318 devices.
-Class BR128_flat:  Merged 1318 devices.
+Flattening unmatched subcell sky130_fd_sc_hd__inv_16 in circuit BR128 (0)(42 instances)
+Flattening unmatched subcell singlestage in circuit BR128 (0)(128 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__nor2_1 in circuit BR128 (0)(256 instances)
+Flattening unmatched subcell demux2-1 in circuit BR128 (0)(128 instances)
+Flattening unmatched subcell mux2-1 in circuit BR128 (0)(128 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_1 in circuit BR128 (0)(256 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_1 in circuit BR128 (0)(128 instances)
+Flattening unmatched subcell sky130_fd_sc_hd__buf_2 in circuit BR128 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_sc_hd__inv_8 in circuit BR128 (0)(1 instance)
 
+Class BR128 (0):  Merged 1318 parallel devices.
+Class BR128_flat (1):  Merged 1318 parallel devices.
 Subcircuit summary:
 Circuit 1: BR128                           |Circuit 2: BR128_flat                      
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (1560)             |sky130_fd_pr__nfet_01v8 (1560)             
-sky130_fd_pr__pfet_01v8_hvt (1816)         |sky130_fd_pr__pfet_01v8_hvt (1816)         
+sky130_fd_pr__nfet_01v8 (2219->1560)       |sky130_fd_pr__nfet_01v8 (2219->1560)       
+sky130_fd_pr__pfet_01v8_hvt (2475->1816)   |sky130_fd_pr__pfet_01v8_hvt (2475->1816)   
 Number of devices: 3376                    |Number of devices: 3376                    
 Number of nets: 1563                       |Number of nets: 1563                       
 ---------------------------------------------------------------------------------------
