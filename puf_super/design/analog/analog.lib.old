@@ -1,0 +1,259 @@
+
+library(analog) {
+
+  technology ("cmos") ;
+  delay_model : "table_lookup" ;
+  bus_naming_style : "%s[%d]";
+  library_features ( report_delay_calculation ) ;
+  date : "Wed Nov 18 20:05:19 2020" ;
+  revision : "M-2017.06-SP3" ;
+  nom_process :  1.000 ;
+  nom_voltage :  1.800 ;
+  nom_temperature : 25.000 ;
+  operating_conditions( "tt_025C_1v80"  ) {
+      process : 1.0000 ;
+      voltage : 1.8000 ;
+      temperature : 25.0000 ;
+      tree_type : "balanced_tree";
+   } /* current design opcond */
+  default_operating_conditions : "tt_025C_1v80" ;
+  voltage_unit : "1V" ;
+  time_unit : "1ns" ;
+  leakage_power_unit : "1nW" ;
+  capacitive_load_unit (1.000000, pf);
+  slew_derate_from_library : 0.5000 ;
+  slew_lower_threshold_pct_rise : 20.0000 ;
+  slew_lower_threshold_pct_fall : 20.0000 ;
+  slew_upper_threshold_pct_rise : 80.0000 ;
+  slew_upper_threshold_pct_fall : 80.0000 ;
+  input_threshold_pct_rise : 50.0000 ;
+  input_threshold_pct_fall : 50.0000 ;
+  output_threshold_pct_rise : 50.0000 ;
+  output_threshold_pct_fall : 50.0000 ;
+  k_process_cell_rise : 0.000000;
+  k_process_cell_fall : 0.000000;
+  k_volt_cell_rise : 0.000000;
+  k_volt_cell_fall : 0.000000;
+  k_temp_cell_rise : 0.000000;
+  k_temp_cell_fall : 0.000000;
+  k_process_rise_transition : 0.000000;
+  k_process_fall_transition : 0.000000;
+  k_volt_rise_transition : 0.000000;
+  k_volt_fall_transition : 0.000000;
+  k_temp_rise_transition : 0.000000;
+  k_temp_fall_transition : 0.000000;
+  default_cell_leakage_power : 0.000000;
+  default_fanout_load : 0.000000;
+  default_inout_pin_cap : 0.000000;
+  default_input_pin_cap : 0.000000;
+  default_max_transition : 1.5000000000;
+  default_output_pin_cap : 0.0;
+  default_leakage_power_density : 0.0000000000;
+  current_unit : "1mA";
+  pulling_resistance_unit : "1kohm";
+  comment : "Hand-written lib file for synthesis" ;
+  
+  type (data){
+  base_type : array;
+  data_type : bit;
+  bit_width : 32;
+  bit_from : 31;
+  bit_to : 0;
+  }
+  
+  voltage_map ( VDD, 1.8 );
+  voltage_map ( VSS, 0 );
+
+  cell( BR32 ) {
+    
+    
+    pg_pin ("VSS") {
+        pg_type : "primary_ground";
+        voltage_name : "VSS";
+    }
+    pg_pin ("VDD") {
+        pg_type : "primary_power";
+        voltage_name : "VDD";
+    }
+    
+    pin ("RESET") {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin ("OUT") {
+        direction : "output";
+    }
+
+    pin (C1) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C2) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C3) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C4) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C5) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C6) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C7) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C8) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C9) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C10) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C11) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C12) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C13) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C14) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C15) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C16) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C17) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C18) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C19) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C20) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C21) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C22) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+
+    pin (C23) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+
+    pin (C24) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+
+    pin (C25) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+
+    pin (C26) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+
+    pin (C27) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+
+    pin (C28) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C29) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C30) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C31) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+    pin (C32) {
+        capacitance : 0.003;
+        clock: "false";
+        direction : "input";
+    }
+
+
+  }
+  
+}
+
