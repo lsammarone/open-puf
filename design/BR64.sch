@@ -150,7 +150,7 @@ N 140 -50 180 -50 { lab=VSS}
 N 180 -50 180 -20 { lab=VSS}
 N 60 -30 90 -30 { lab=#net8}
 N 90 -30 90 10 { lab=#net8}
-N -70 -90 -30 -90 { lab=r4}
+N -70 -90 -30 -90 { lab=r5,7*r4}
 N -70 -70 -30 -70 { lab=out[31:24]}
 N -70 -50 -30 -50 { lab=C[31:24]}
 N 180 -160 180 -130 { lab=VDD}
@@ -158,7 +158,7 @@ N 180 -20 180 0 { lab=VSS}
 N 210 -70 250 -70 { lab=out[32:25]}
 N -110 -70 -70 -70 { lab=out[31:24]}
 N -70 -50 -70 -10 { lab=C[31:24]}
-N -70 -130 -70 -90 { lab=r4}
+N -70 -130 -70 -90 { lab=r5,7*r4}
 N 1390 190 1460 190 { lab=out[0],out[63:57]}
 N 1390 170 1430 170 { lab=VDD}
 N 1430 130 1430 170 { lab=VDD}
@@ -290,7 +290,7 @@ C {devices/lab_pin.sym} 180 -10 0 0 {name=l30 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 240 -70 0 0 {name=l31 sig_type=std_logic lab=out[32:25]}
 C {devices/lab_pin.sym} -50 -70 0 0 {name=l32 sig_type=std_logic lab=out[31:24]}
 C {devices/lab_pin.sym} -70 -20 0 0 {name=l33 sig_type=std_logic lab=C[31:24]}
-C {devices/lab_pin.sym} -70 -120 0 0 {name=l34 sig_type=std_logic lab=r4}
+C {devices/lab_pin.sym} -70 -120 0 0 {name=l34 sig_type=std_logic lab=r5,r4,r4,r4,r4,r4,r4,r4}
 C {singlestage.sym} 1370 190 0 0 {name=x5[63:56]}
 C {devices/lab_pin.sym} 1430 110 0 0 {name=l35 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1430 250 0 0 {name=l36 sig_type=std_logic lab=VSS}
