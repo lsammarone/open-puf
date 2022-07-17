@@ -1,0 +1,4 @@
+name: floorplan
+
+outputs:
+  - floorplan.tcl

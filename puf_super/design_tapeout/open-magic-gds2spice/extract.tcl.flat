@@ -1,0 +1,14 @@
+cif istyle sky130(vendor)
+gds flatten true
+gds read ./inputs/design_merged.gds
+load puf_super
+select top cell
+flatten puf_super_flat
+load puf_super_flat
+extract no all
+extract do local
+extract unique
+extract
+ext2spice lvs
+ext2spice puf_super_flat.ext
+exit

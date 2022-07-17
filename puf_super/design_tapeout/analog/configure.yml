@@ -1,0 +1,41 @@
+name: analog 
+
+outputs:
+  - analog.db
+  - analog.lib
+  - BR32.lef
+  - BR32.gds
+  - BR32.sp
+  - BR64.lef
+  - BR64.gds
+  - BR64.sp
+  - BR128.lef
+  - BR128.gds
+  - BR128.sp
+  - NBR32.lef
+  - NBR32.gds
+  - NBR64.lef
+  - NBR64.gds
+  - NBR128.lef
+  - NBR128.gds
+
+
+commands:
+  - lc_shell -f lc_shell_gen_db.tcl
+  - cat analog.db > ./outputs/analog.db
+  - cat analog.lib > ./outputs/analog.lib
+  - cat BR32.lef > ./outputs/BR32.lef
+  - cat BR32.gds > ./outputs/BR32.gds
+  - cat BR32.sp > ./outputs/BR32.sp
+  - cat BR64.lef > ./outputs/BR64.lef
+  - cat BR64.gds > ./outputs/BR64.gds
+  - cat BR64.sp > ./outputs/BR64.sp
+  - cat BR128.lef > ./outputs/BR128.lef
+  - cat BR128.gds > ./outputs/BR128.gds
+  - cat BR128.sp > ./outputs/BR128.sp
+  - cat NBR32.lef > ./outputs/NBR32.lef
+  - cat NBR32.gds > ./outputs/NBR32.gds
+  - cat NBR64.lef > ./outputs/NBR64.lef
+  - cat NBR64.gds > ./outputs/NBR64.gds
+  - cat NBR128.lef > ./outputs/NBR128.lef
+  - cat NBR128.gds > ./outputs/NBR128.gds

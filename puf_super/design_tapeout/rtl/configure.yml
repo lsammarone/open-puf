@@ -1,0 +1,21 @@
+name: rtl
+
+outputs:
+  - design.v
+  - design.vcs.v
+  - BR32.vcs.v
+  - BR64.vcs.v
+  - BR128.vcs.v
+  - NBR32.vcs.v
+  - NBR64.vcs.v
+  - NBR128.vcs.v
+
+commands:
+  - cat ChalShiftReg.v puf.v npuf.v BR32.v BR64.v BR128.v NBR32.v NBR64.v NBR128.v puf_super.v > outputs/design.v 
+  - cat ChalShiftReg.v puf.v npuf.v BR32.vcs.v BR64.vcs.v BR128.vcs.v NBR32.vcs.v NBR64.vcs.v NBR128.vcs.v puf_super.v > outputs/design.vcs.v 
+  - cat BR32.vcs.v > outputs/BR32.vcs.v
+  - cat BR64.vcs.v > outputs/BR64.vcs.v
+  - cat BR128.vcs.v > outputs/BR128.vcs.v
+  - cat NBR32.vcs.v > outputs/NBR32.vcs.v
+  - cat NBR64.vcs.v > outputs/NBR64.vcs.v
+  - cat NBR128.vcs.v > outputs/NBR128.vcs.v
