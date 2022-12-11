@@ -52,7 +52,7 @@ x2[19] r3 VDD VSS out[20] out[19] net7[3] C[19] singlestage
 x2[18] r3 VDD VSS out[19] out[18] net7[2] C[18] singlestage
 x2[17] r3 VDD VSS out[18] out[17] net7[1] C[17] singlestage
 x2[16] r3 VDD VSS out[17] out[16] net7[0] C[16] singlestage
-x4[31] r5 VDD VSS out[32] out[31] net8[7] C[31] singlestage
+x4[31] r4 VDD VSS out[32] out[31] net8[7] C[31] singlestage
 x4[30] r4 VDD VSS out[31] out[30] net8[6] C[30] singlestage
 x4[29] r4 VDD VSS out[30] out[29] net8[5] C[29] singlestage
 x4[28] r4 VDD VSS out[29] out[28] net8[4] C[28] singlestage
